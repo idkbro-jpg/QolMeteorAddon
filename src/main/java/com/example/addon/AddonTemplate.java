@@ -2,6 +2,7 @@ package com.example.addon;
 
 import com.example.addon.commands.CommandExample;
 import com.example.addon.hud.HudExample;
+import com.example.addon.hud.TotemCounter;
 import com.example.addon.modules.ModuleExample;
 import com.example.addon.modules.PlayerWarner;
 import com.mojang.logging.LogUtils;
@@ -32,6 +33,7 @@ public class AddonTemplate extends MeteorAddon {
 
         // HUD
         Hud.get().register(HudExample.INFO);
+        Hud.get().register(TotemCounter.INFO);
     }
 
     @Override
